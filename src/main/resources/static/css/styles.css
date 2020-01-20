@@ -1,0 +1,17 @@
+body { padding-top: 20px; }
+
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+
+#sticky-footer {
+    flex-shrink: none;
+    margin-top: 20px; /* space between content and footer */
+    bottom: 0;
+
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    font-family: Roboto Slab,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
