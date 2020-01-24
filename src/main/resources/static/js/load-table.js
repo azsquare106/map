@@ -3,6 +3,11 @@ $(document).ready(function() {
 
 
     var table = $('#example').DataTable({
+        responsive: true,
+        columnDefs: [
+            { responsivePriority: 1, targets: 0 },
+            { responsivePriority: 2, targets: -1 }
+        ],
         "sAjaxSource": "/users",
         "sAjaxDataProp": "",
         "order": [[ 0, "asc" ]],
@@ -69,6 +74,21 @@ $(document).ready(function() {
         });
 
     }
+
+
+
+    $('a[href^="#"]').on('click', function(event) {
+
+        var target = $(this.getAttribute('href'));
+
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+
+    });
 
 
 
