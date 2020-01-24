@@ -19,17 +19,69 @@
 
 <div class="container">
 
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Sign Up</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Feature</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-        </li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+        <a class="navbar-brand" href="#">
+            <img src="img/icon.jpg" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mr-2">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Sign Up
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#page2">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#page2">Features</a>
+                </li>
+
+
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#loginModal">Sign in</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="collapse" id="collapseExample" >
+        <div class="card card-body">
+            This labore wes anderson cred nesciunt sapiente ea proident.
+
+            <form>
+
+                <div class="form-group">
+                    <label for="exampleInputName">First name</label>
+                    <input type="name" class="form-control" id="exampleInputName" aria-describedby="name" placeholder="Enter First Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputLastName">Last name</label>
+                    <input type="lastName" class="form-control" id="exampleInputLastName" aria-describedby="lastName" placeholder="Enter Last Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
 
     <div class="row">
         <div class="col-md-7">
@@ -74,7 +126,7 @@
     <hr>
 
 
-    <div class="row" >
+    <div class="row" id="page2">
         <div class="col-md-5">
 
             <h1 class="mt-0 mt-lg-4">Welcome to my first page</h1>
@@ -117,7 +169,47 @@
               </div>
 
     </div>
+
+
 </div>  <!--End container -->
+
+
+
+<!-- Modal Login-->
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            </div>
+            <div class="modal-body">
+
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail1" aria-describedby="email" placeholder="Enter email">
+                        <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="loginPassword1" placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end Modal Login-->
+
+
 
 <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
