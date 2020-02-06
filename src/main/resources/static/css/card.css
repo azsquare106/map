@@ -1,0 +1,43 @@
+.plugin-hit-card {
+    background-color: #fff;
+    height: 100%;
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,.18);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+.header {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.body {
+    padding: .5rem 1rem 2rem;
+}
+
+.body-excerpt {
+    margin-top: .5rem;
+}
+
+
+.plugin-hit-icon {
+    width: 50%;
+
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+
+p {
+
+  color: #fff;
+}
